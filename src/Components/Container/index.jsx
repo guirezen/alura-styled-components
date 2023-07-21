@@ -1,16 +1,18 @@
 import React from "react";
-
+import {ContainerStyled, Conteudo} from './styled.js'
 import Titulo from "../Titulo";
 import Conta from "../Conta";
+import Extrato from "../Extrato/index.jsx";
 
 const Container = () => {
   return (
-    <div className="container">
-      <Titulo>Olá Fulano!</Titulo>
-      <section className="conteudo">
+    <ContainerStyled>
+      <Titulo>Olá Guilherme!</Titulo>
+      <Conteudo>
         <Conta />
-      </section>
-    </div>
+        <Extrato/>
+      </Conteudo>
+    </ContainerStyled>
   );
 };
 

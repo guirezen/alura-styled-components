@@ -1,3 +1,9 @@
+import iconeComida from './assets/images/alimentacao.svg'
+import iconeCasa from './assets/images/utilidades.svg'
+import iconeCoracao from './assets/images/saude.svg'
+import iconeTrem from './assets/images/transporte.svg'
+import iconeOutros from './assets/images/outros.svg'
+
 export const extratoLista = {
   updates: [
     {
@@ -6,6 +12,7 @@ export const extratoLista = {
       value: "150,00",
       date: "11 JUN",
       from: "Bonna Parma",
+      image: iconeComida
     },
     {
       id: "4564654",
@@ -13,6 +20,7 @@ export const extratoLista = {
       value: "130,00",
       date: "9 JUN",
       from: "CPFL *energia",
+      image: iconeCasa
     },
     {
       id: "65445",
@@ -20,6 +28,7 @@ export const extratoLista = {
       value: "15,00",
       date: "8 JUN",
       from: "Farma Ponte",
+      image: iconeCoracao
     },
     {
       id: "656565",
@@ -27,6 +36,7 @@ export const extratoLista = {
       value: "15,00",
       date: "8 JUN",
       from: "Uber",
+      image: iconeTrem
     },
 
     {
@@ -35,6 +45,7 @@ export const extratoLista = {
       value: "150,00",
       date: "5 JUN",
       from: "AliExpress",
+      image: iconeOutros
     },
   ],
 };

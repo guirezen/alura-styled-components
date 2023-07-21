@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
+import { BtnConta, DivBox, DivSaldo, ImagemIcone, ImagemIconeMargin, SpanDetalhe } from "./styled";
 
 const Conta = () => {
   const [toggleState, untoggle] = useState(true);
@@ -12,29 +13,27 @@ const Conta = () => {
   };
 
   return (
-    <div className="box">
+    <DivBox>
       <h2>Conta</h2>
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         <span>
-          <img className="imagem-icone" src={dinheiro} alt="Ícone Saldo" />
+          <ImagemIcone src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
-          <div className="saldo">
-            <span className="detalhe">R$</span> 0,00{" "}
-          </div>
+          <DivSaldo>
+            <SpanDetalhe>R$</SpanDetalhe> 1.000.000,00{" "}
+          </DivSaldo>
         ) : null}
       </div>
 
-      <button className="btn" onClick={toggleHandler}>
-        <img
-          style={{ marginTop: "2px" }}
-          className="imagem-icone"
+      <BtnConta onClick={toggleHandler}>
+        <ImagemIconeMargin
           src={toggleState ? privado : olho_icone}
           alt="Privacidade do Saldo"
         />
-      </button>
-    </div>
+      </BtnConta>
+    </DivBox>
   );
 };
 
