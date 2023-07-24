@@ -30,8 +30,3 @@ export const BtnCabecalho = styled.a`
     background: ${(props) => props.cor ? 'white' : 'transparent'};
     color: ${(props) => props.cor ? '#41d3be' : 'white'};
 `
-
-export const BtnTema = styled.button`
-    border: none;
-    background-color: transparent; 
-`

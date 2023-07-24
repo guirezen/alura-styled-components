@@ -4,7 +4,7 @@ import Titulo from "../Titulo";
 import Conta from "../Conta";
 import Extrato from "../Extrato/index.jsx";
 
-const Container = () => {
+const Container = ({tema}) => {
   return (
     <ContainerStyled>
       <Titulo>Olá Guilherme!</Titulo>

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { temaEscuro } from "../UI/temas";
 
 export const DivBox = styled.div`
     display: flex;
@@ -20,6 +21,7 @@ export const DivBox = styled.div`
 export const ImagemIcone = styled.img`
     height: 25px;
     width: 25px;
+    filter: ${({theme}) => theme.filter};
 `
 
 export const ImagemIconeMargin = styled(ImagemIcone)`
