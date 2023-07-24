@@ -26,7 +26,6 @@ const Conta = () => {
           </DivSaldo>
         ) : null}
       </div>
-
       <BtnConta onClick={toggleHandler}>
         <ImagemIconeMargin
           src={toggleState ? privado : olho_icone}
